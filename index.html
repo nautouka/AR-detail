@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Performance Dashboard | Financial Analytics Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card { @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100; }
+        .metric-label { @apply text-gray-400 text-xs uppercase tracking-wider font-semibold; }
+        .metric-value { @apply text-3xl font-bold text-slate-800 mt-1; }
+        .feature-item { @apply bg-slate-50 border border-slate-100 p-4 rounded-lg; }
+        .feature-title { @apply font-semibold text-sm text-slate-800 flex items-center mb-1; }
+        .feature-desc { @apply text-xs text-slate-600; }
+        .benefit-card { @apply p-4 border-l-4 border-blue-500 bg-blue-50/30 rounded-r-lg; }
+        .benefit-title { @apply font-bold text-slate-800 text-sm mb-1; }
+        .benefit-text { @apply text-xs text-slate-600 leading-relaxed; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-900 font-sans">
+
+    <div class="max-w-7xl mx-auto py-10 px-6">
+        
+        <header class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4 border-b pb-6 border-slate-200">
+            <div>
+                <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Accounts Receivable Details</h1>
+                <p class="text-lg text-slate-500 mt-2">Strategic Financial Monitoring & Collection Analytics</p>
+            </div>
+            <div class="flex gap-3">
+                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded text-sm font-medium">Power BI Implementation</span>
+                <span class="bg-slate-200 text-slate-700 px-3 py-1 rounded text-sm font-medium">Business Intelligence</span>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-12 gap-8">
+            
+            <aside class="col-span-12 lg:col-span-3 space-y-6">
+                <div class="card">
+                    <h3 class="font-bold text-lg text-slate-800 mb-5 pb-2 border-b-2 border-blue-500 text-center lg:text-left">Core Functionality</h3>
+                    <div class="space-y-4">
+                        <div class="feature-item">
+                            <h4 class="feature-title">Multi-Dimensional Slicers</h4>
+                            <p class="feature-desc">Query by Company, Project ID, Invoice, and Receivable Amount.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4 class="feature-title">Executive Scorecards</h4>
+                            <p class="feature-desc">Real-time tracking of Billing, Collections, and Outstanding Balances.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4 class="feature-title">Granular Drill-down</h4>
+                            <p class="feature-desc">Seamless transition from high-level entity to detailed invoice level.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-4">
+                    <h5 class="text-xs font-bold text-slate-400 uppercase mb-3 tracking-widest">Status Legend</h5>
+                    <div class="flex flex-col gap-2 text-sm">
+                        <span class="flex items-center"><strong class="mr-2 text-green-500">✅</strong> Settled / No Debt</span>
+                        <span class="flex items-center"><strong class="mr-2 text-orange-500">⚠️</strong> Pending / Outstanding</span>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-span-12 lg:col-span-9 space-y-8">
+                
+                <section class="card overflow-hidden border-2 border-blue-500 shadow-xl">
+                    <div class="flex items-center justify-between mb-4 border-b pb-4">
+                        <h2 class="text-xl font-bold text-slate-800">Actual Power BI Dashboard</h2>
+                        <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">v2.0 Stable Build</span>
+                    </div>
+                    <img src="AR1.png" alt="AR Dashboard" class="w-full h-auto rounded-lg">
+                </section>
+
+                <section class="space-y-4">
+                    <h2 class="text-2xl font-bold text-slate-800 ml-1">Business Value & Impact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="benefit-card">
+                            <h3 class="benefit-title">Accelerated Cash Collection</h3>
+                            <p class="benefit-text">Reduces DSO (Days Sales Outstanding) by highlighting high-value pending payments for immediate follow-up.</p>
+                        </div>
+                        <div class="benefit-card border-blue-400">
+                            <h3 class="benefit-title">Granular Risk Visibility</h3>
+                            <p class="benefit-text">Identifies specific project delivery or client credit issues through entity-to-invoice drill-down transparency.</p>
+                        </div>
+                        <div class="benefit-card border-blue-600">
+                            <h3 class="benefit-title">Enhanced Liquidity Forecasting</h3>
+                            <p class="benefit-text">Visualizes the "Invoiced vs. Collected" gap, helping management plan future cash flows and working capital.</p>
+                        </div>
+                        <div class="benefit-card border-blue-800">
+                            <h3 class="benefit-title">Strategic Resource Allocation</h3>
+                            <p class="benefit-text">Enables the AR team to focus on major outstanding accounts, optimizing effort and minimizing bad debt exposure.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="card"><p class="metric-label">Billing</p><p class="metric-value">$54K</p></div>
+                    <div class="card"><p class="metric-label">Invoiced</p><p class="metric-value text-slate-300">$93K</p></div>
+                    <div class="card"><p class="metric-label text-green-600">Collected</p><p class="metric-value">$35K</p></div>
+                    <div class="card border-l-4 border-orange-500"><p class="metric-label text-orange-600">Receivables</p><p class="metric-value text-orange-700">$36K</p></div>
+                </div>
+
+                <footer class="text-center text-slate-400 text-xs py-10">
+                    Analytical Solution designed for Accounts Receivable Management. Created for Portfolio Showcase.
+                </footer>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
